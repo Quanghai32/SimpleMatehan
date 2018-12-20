@@ -1,0 +1,4 @@
+﻿{"CLs":[{"__type":"LD","Var":"HMI_CV_FORWARD"},{"__type":"ST","Ix":1,"Var":"MA_CV_FORWARD","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"HMI_CV_BACKWARD"},{"__type":"ST","Ix":1,"Var":"MA_CV_BACKWARD","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"MA_CV_BACKWARD"},{"__type":"LD","Ix":2,"Var":"C_CV_Backward","Y":1},{"__type":"LD","Ix":1,"Not":true,"Var":"Y31","X":1},{"__type":"ST","Ix":3,"Var":"Y30","X":2}],"LRI":4,"RRI":5,"VLs":[{"Ix":6,"X":1}]}
+{"CLs":[{"__type":"LD","Var":"MA_CV_FORWARD"},{"__type":"LD","Ix":2,"Var":"C_CV_Forward","Y":1},{"__type":"LD","Ix":1,"Not":true,"Var":"Y30","X":1},{"__type":"ST","Ix":3,"Var":"Y31","X":2}],"LRI":4,"RRI":5,"VLs":[{"Ix":6,"X":1}]}

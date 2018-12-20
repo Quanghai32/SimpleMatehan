@@ -1,0 +1,94 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=HMI_CV_FORWARD	AT=%W300.0	G=VAR
+++D=BOOL	N=HMI_CV_BACKWARD	AT=%W300.1	G=VAR
+++D=BOOL	N=MA_CV_FORWARD	G=VAR
+++D=BOOL	N=MA_CV_BACKWARD	G=VAR
+++D=BOOL	N=MA_BLDC_CLAMP	G=VAR
+++D=BOOL	N=MA_BLDC_INT_SPEED	G=VAR
+++D=BOOL	N=Clamp_Low_SP_SS	G=VAR
+++D=BOOL	N=Clamp_Break	G=VAR
+++D=DECO_FB	N=Centerring_Deco_FB	G=VAR
+++D=UINT	N=Center_Step	G=VAR
+++D=ARRAY[0..99] OF BOOL	N=Center_Stage	G=VAR	EC=<ECs><EC EK="[0]" C="Unclamp in start" /><EC EK="[22]" C="Stopper down in start" /><EC EK="[14]" C="Unclamp timeout, re-clamp" /><EC EK="[1]" C="Check board in start" /><EC EK="[2]" C="CV Forward" /><EC EK="[3]" C="Delay AF hit SS4" /><EC EK="[4]" C="Run 1s in start" /><EC EK="[17]" C="Check SS3" /><EC EK="[18]" C="Up Backward stopper" /><EC EK="[19]" C="CV Backward" /><EC EK="[20]" C="Delay AF Hit SS3" /><EC EK="[15]" C="Check BF Up Centerring" /><EC EK="[5]" C="Up centerring cyl" /><EC EK="[6]" C="Check Low Speed SS" /><EC EK="[7]" C="Clamp high speed" /><EC EK="[8]" C="Clamp low speed" /><EC EK="[13]" C="Delay BF Break" /><EC EK="[10]" C="Un clamp high speed" /><EC EK="[11]" C="Center cyl DOWN" /><EC EK="[12]" C="Allow pickup" /><EC EK="[23]" C="Delay AF Pickup" /><EC EK="[21]" C="Backward Stopper Down" /><EC EK="[16]" C="Clamp fail" /><EC EK="[9]" C="Delay in break" /></ECs>
+++D=TON	N=T_Unclamp_Timeout	G=VAR
+++D=TON	N=T_Delay_AF_Hit_SS4	G=VAR
+++D=ton	N=T_Run_1s_In_Start	G=VAR
+++D=ton	N=T_Timeout_Hit_SS3	G=VAR	Com=Timeout hit SS3 when CV Backward
+++D=ton	N=T_Delay_AF_Hit_SS3	G=VAR
+++D=ton	N=T_Delay_In_Break	G=VAR
+++D=ton	N=T_Delay_AF_Pickup	G=VAR
+++D=BOOL	N=C_CV_Forward	G=VAR
+++D=BOOL	N=C_CV_Backward	G=VAR
+++D=BOOL	N=Backward_Stopper_Up	G=VAR
+++D=BOOL	N=Backward_Stopper_Down	G=VAR
+++D=BOOL	N=BLDC_Clamp_H_SP	G=VAR
+++D=BOOL	N=BLDC_Clamp_L_SP	G=VAR
+++D=BOOL	N=BLDC_U_Clamp_H_SP	G=VAR
+++D=BOOL	N=BLDC_U_Clamp_L_SP	G=VAR
+++D=BOOL	N=HMI_CLAMP_L_SP	AT=%W310.0	G=VAR
+++D=BOOL	N=HMI_U_CLAMP_L_SP	AT=%W310.1	G=VAR
+++D=BOOL	N=HMI_CLAMP_H_SP	AT=%W310.2	G=VAR
+++D=BOOL	N=HMI_U_CLAMP_H_SP	AT=%W310.3	G=VAR
+++D=BOOL	N=C_Clamp_H_SP	G=VAR
+++D=BOOL	N=C_U_Clamp_H_SP	G=VAR
+++D=BOOL	N=C_Clamp_L_SP	G=VAR
+++D=BOOL	N=C_Center_Cyl_Up	G=VAR
+++D=BOOL	N=C_Center_Cyl_Down	G=VAR
+++D=BOOL	N=C_Backward_Stopper_Up	G=VAR
+++D=BOOL	N=C_Backward_Stopper_Down	G=VAR
+++D=BOOL	N=C_For_Stopper_Up	G=VAR
+++D=BOOL	N=HMI_Forward_Stopper	AT=%W315.00	G=VAR
+++D=BOOL	N=HMI_Backward_Stopper	AT=%W315.01	G=VAR
+++D=BOOL	N=HMI_Up_Board	AT=%W315.02	G=VAR
+++D=TON	N=T_Delay_BF_Break	G=VAR
+++D=BOOL	N=Test_Centerring	G=VAR
+++D=TIME	N=Time_Delay_BF_Break	G=VAR
+++D=BOOL	N=Centerring_Allow	AT=%H0.01	R=1	G=VAR
+++D=TON	N=T_Cyl_Up_Timeout	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=Y30	G=VAR_EXTERNAL
+++D=BOOL	N=Y31	G=VAR_EXTERNAL
+++D=BOOL	N=Y33	G=VAR_EXTERNAL
+++D=BOOL	N=Y34	G=VAR_EXTERNAL
+++D=BOOL	N=Y35	G=VAR_EXTERNAL
+++D=BOOL	N=Y37	G=VAR_EXTERNAL
+++D=BOOL	N=Y36	G=VAR_EXTERNAL
+++D=BOOL	N=Auto_Run	G=VAR_EXTERNAL
+++D=BOOL	N=X33	G=VAR_EXTERNAL
+++D=BOOL	N=X34	G=VAR_EXTERNAL
+++D=BOOL	N=X32	G=VAR_EXTERNAL
+++D=BOOL	N=X35	G=VAR_EXTERNAL
+++D=BOOL	N=X30	G=VAR_EXTERNAL
+++D=BOOL	N=X45	G=VAR_EXTERNAL
+++D=BOOL	N=X47	G=VAR_EXTERNAL
+++D=BOOL	N=X39	G=VAR_EXTERNAL
+++D=BOOL	N=Prohibit_Pickup	G=VAR_EXTERNAL
+++D=BOOL	N=X46	G=VAR_EXTERNAL
+++D=BOOL	N=X38	G=VAR_EXTERNAL
+++D=BOOL	N=X37	G=VAR_EXTERNAL
+++D=BOOL	N=X44	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=MC_Axis000	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=X55	G=VAR_EXTERNAL
+++D=BOOL	N=X31	G=VAR_EXTERNAL
+++D=BOOL	N=X56	G=VAR_EXTERNAL
+++D=BOOL	N=Y38	G=VAR_EXTERNAL
+++D=BOOL	N=Y39	G=VAR_EXTERNAL
+++D=BOOL	N=Y42	G=VAR_EXTERNAL
+++D=BOOL	N=C_Allow_Pickup	G=VAR_EXTERNAL
+++D=BOOL	N=Pickup_OK	G=VAR_EXTERNAL
+++D=BOOL	N=Align_For_Cart	G=VAR_EXTERNAL
+++D=BOOL	N=MANUAL_MOD	G=VAR_EXTERNAL
+++D=BOOL	N=Y41	G=VAR_EXTERNAL
+++D=INT	N=Run_Mod	G=VAR_EXTERNAL
+++D=BOOL	N=SV1_Busy	G=VAR_EXTERNAL
+++D=BOOL	N=Pickup_OK_SV2_P1	G=VAR_EXTERNAL
+++D=BOOL	N=U_Up_Forward_Stopper	G=VAR_EXTERNAL
+++D=BOOL	N=Cart_Ready	G=VAR_EXTERNAL
+++D=BOOL	N=Cart_Over_Load	G=VAR_EXTERNAL
+++D=BOOL	N=Forward_Stopper_Down	G=VAR_EXTERNAL
+++D=BOOL	N=Start_Cycle_Centerring	G=VAR_EXTERNAL
+++D=BOOL	N=X41	G=VAR_EXTERNAL
+++D=BOOL	N=Cyl_Up_Timeout	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_AUTO	G=VAR_EXTERNAL

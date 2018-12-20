@@ -1,0 +1,194 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
+++D=_sAXIS_REF	N=MC_Axis000	AT=MC://_MC_AX[0]	RO=1	Const=1	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=MC_Axis001	AT=MC://_MC_AX[1]	RO=1	Const=1	G=VAR_GLOBAL
+++D=BOOL	N=X0	AT=BuiltInIO://cpu/#0/Input_Bit_00	G=VAR_GLOBAL	Com=EMG Side
+++D=BOOL	N=X1	AT=BuiltInIO://cpu/#0/Input_Bit_01	G=VAR_GLOBAL	Com=EMG Front
+++D=BOOL	N=X2	AT=BuiltInIO://cpu/#0/Input_Bit_02	G=VAR_GLOBAL	Com=Start BT
+++D=BOOL	N=X3	AT=BuiltInIO://cpu/#0/Input_Bit_03	G=VAR_GLOBAL	Com=Stop BT
+++D=BOOL	N=X4	AT=BuiltInIO://cpu/#0/Input_Bit_04	G=VAR_GLOBAL	Com=Reset BT
+++D=BOOL	N=X5	AT=BuiltInIO://cpu/#0/Input_Bit_05	G=VAR_GLOBAL	Com=Up BT
+++D=BOOL	N=X6	AT=BuiltInIO://cpu/#0/Input_Bit_06	G=VAR_GLOBAL	Com=Down BT
+++D=BOOL	N=X7	AT=BuiltInIO://cpu/#0/Input_Bit_07	G=VAR_GLOBAL	Com=Liftup LM UP
+++D=BOOL	N=X8	AT=BuiltInIO://cpu/#0/Input_Bit_08	G=VAR_GLOBAL	Com=Liftup LM DW
+++D=BOOL	N=X9	AT=BuiltInIO://cpu/#0/Input_Bit_09	G=VAR_GLOBAL	Com=Blower Alarm
+++D=BOOL	N=X10	AT=BuiltInIO://cpu/#0/Input_Bit_10	G=VAR_GLOBAL	Com=CV Alarm (NC)
+++D=BOOL	N=X11	AT=BuiltInIO://cpu/#0/Input_Bit_11	G=VAR_GLOBAL	Com=BLDC Alarm
+++D=BOOL	N=X12	AT=BuiltInIO://cpu/#0/Input_Bit_12	G=VAR_GLOBAL	Com=Liftup Alarm
+++D=BOOL	N=X13	AT=BuiltInIO://cpu/#0/Input_Bit_13	G=VAR_GLOBAL
+++D=BOOL	N=X14	AT=BuiltInIO://cpu/#0/Input_Bit_14	G=VAR_GLOBAL
+++D=BOOL	N=X15	AT=BuiltInIO://cpu/#0/Input_Bit_15	G=VAR_GLOBAL
+++D=BOOL	N=X16	AT=BuiltInIO://cpu/#0/Input_Bit_16	G=VAR_GLOBAL
+++D=BOOL	N=X17	AT=BuiltInIO://cpu/#0/Input_Bit_17	G=VAR_GLOBAL
+++D=BOOL	N=X18	AT=BuiltInIO://cpu/#0/Input_Bit_18	G=VAR_GLOBAL
+++D=BOOL	N=X19	AT=BuiltInIO://cpu/#0/Input_Bit_19	G=VAR_GLOBAL
+++D=BOOL	N=X20	AT=BuiltInIO://cpu/#0/Input_Bit_20	G=VAR_GLOBAL
+++D=BOOL	N=X21	AT=BuiltInIO://cpu/#0/Input_Bit_21	G=VAR_GLOBAL
+++D=BOOL	N=X22	AT=BuiltInIO://cpu/#0/Input_Bit_22	G=VAR_GLOBAL
+++D=BOOL	N=X23	AT=BuiltInIO://cpu/#0/Input_Bit_23	G=VAR_GLOBAL
+++D=BOOL	N=Y0	AT=BuiltInIO://cpu/#0/Output_Bit_00	G=VAR_GLOBAL	Com=Start PL
+++D=BOOL	N=Y1	AT=BuiltInIO://cpu/#0/Output_Bit_01	G=VAR_GLOBAL	Com=Stop PL
+++D=BOOL	N=Y2	AT=BuiltInIO://cpu/#0/Output_Bit_02	G=VAR_GLOBAL	Com=Reset PL
+++D=BOOL	N=Y3	AT=BuiltInIO://cpu/#0/Output_Bit_03	G=VAR_GLOBAL	Com=Button UP PL
+++D=BOOL	N=Y4	AT=BuiltInIO://cpu/#0/Output_Bit_04	G=VAR_GLOBAL	Com=Button DW PL
+++D=BOOL	N=Y5	AT=BuiltInIO://cpu/#0/Output_Bit_05	G=VAR_GLOBAL	Com=Lift UP
+++D=BOOL	N=Y6	AT=BuiltInIO://cpu/#0/Output_Bit_06	G=VAR_GLOBAL	Com=Lift DOWN
+++D=BOOL	N=Y7	AT=BuiltInIO://cpu/#0/Output_Bit_07	G=VAR_GLOBAL	Com=BLOWER
+++D=BOOL	N=Y8	AT=BuiltInIO://cpu/#0/Output_Bit_08	G=VAR_GLOBAL	Com=Blower reset
+++D=BOOL	N=Y9	AT=BuiltInIO://cpu/#0/Output_Bit_09	G=VAR_GLOBAL	Com=TW Red
+++D=BOOL	N=Y10	AT=BuiltInIO://cpu/#0/Output_Bit_10	G=VAR_GLOBAL	Com=TW Yellow
+++D=BOOL	N=Y11	AT=BuiltInIO://cpu/#0/Output_Bit_11	G=VAR_GLOBAL	Com=TW Green
+++D=BOOL	N=Y12	AT=BuiltInIO://cpu/#0/Output_Bit_12	G=VAR_GLOBAL	Com=TW Buzzer
+++D=BOOL	N=Y13	AT=BuiltInIO://cpu/#0/Output_Bit_13	G=VAR_GLOBAL
+++D=BOOL	N=Y14	AT=BuiltInIO://cpu/#0/Output_Bit_14	G=VAR_GLOBAL
+++D=BOOL	N=Y15	AT=BuiltInIO://cpu/#0/Output_Bit_15	G=VAR_GLOBAL
+++D=BOOL	N=X30	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 00	G=VAR_GLOBAL	Com=Limit clamp out
+++D=BOOL	N=X31	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 01	G=VAR_GLOBAL	Com=Limit clamp in
+++D=BOOL	N=X32	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 02	G=VAR_GLOBAL	Com=Clamp right break
+++D=BOOL	N=X33	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 03	G=VAR_GLOBAL	Com=Clamp right low sp
+++D=BOOL	N=X34	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 04	G=VAR_GLOBAL	Com=Clamp left low sp
+++D=BOOL	N=X35	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 05	G=VAR_GLOBAL	Com=Clamp left break
+++D=BOOL	N=X36	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 06	G=VAR_GLOBAL	Com=Detect CV1
+++D=BOOL	N=X37	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 07	G=VAR_GLOBAL	Com=Detect CV2
+++D=BOOL	N=X38	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 08	G=VAR_GLOBAL	Com=Detect CV3
+++D=BOOL	N=X39	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 09	G=VAR_GLOBAL	Com=Detect CV4
+++D=BOOL	N=X40	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 10	G=VAR_GLOBAL	Com=Detect buffer
+++D=BOOL	N=X41	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 11	G=VAR_GLOBAL	Com=ORG Buffer
+++D=BOOL	N=X42	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 12	G=VAR_GLOBAL	Com=Vacuum SS
+++D=BOOL	N=X43	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 13	G=VAR_GLOBAL	Com=Limit PCB
+++D=BOOL	N=X44	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 14	G=VAR_GLOBAL	Com=Backward stopper UP LM
+++D=BOOL	N=X45	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 15	G=VAR_GLOBAL	Com=Backward stopper DW LM
+++D=BOOL	N=X46	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 16	G=VAR_GLOBAL	Com=Forward stopper UP LM
+++D=BOOL	N=X47	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 17	G=VAR_GLOBAL	Com=Forward stopper DW LM
+++D=BOOL	N=X48	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 18	G=VAR_GLOBAL	Com=Cart detect left
+++D=BOOL	N=X49	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 19	G=VAR_GLOBAL	Com=Cart detect right
+++D=BOOL	N=X50	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 20	G=VAR_GLOBAL	Com=Door 1
+++D=BOOL	N=X51	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 21	G=VAR_GLOBAL	Com=Door 2
+++D=BOOL	N=X52	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 22	G=VAR_GLOBAL	Com=Door 3
+++D=BOOL	N=X53	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 23	G=VAR_GLOBAL	Com=Door 4
+++D=BOOL	N=X54	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 24	G=VAR_GLOBAL	Com=Door 5
+++D=BOOL	N=X55	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 25	G=VAR_GLOBAL	Com=Center LM UP
+++D=BOOL	N=X56	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 26	G=VAR_GLOBAL	Com=Center LM DW
+++D=BOOL	N=X57	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 27	G=VAR_GLOBAL
+++D=BOOL	N=X58	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 28	G=VAR_GLOBAL
+++D=BOOL	N=X59	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 29	G=VAR_GLOBAL
+++D=BOOL	N=X60	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 30	G=VAR_GLOBAL
+++D=BOOL	N=X61	AT=IOBus://unit#1/Input Bit 32 bits/Input Bit 31	G=VAR_GLOBAL
+++D=BOOL	N=Y30	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 00	G=VAR_GLOBAL	Com=CV Backward
+++D=BOOL	N=Y31	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 01	G=VAR_GLOBAL	Com=CV Forward
+++D=BOOL	N=Y32	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 02	G=VAR_GLOBAL	Com=CV Reset
+++D=BOOL	N=Y33	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 03	G=VAR_GLOBAL	Com=BLDC Start
+++D=BOOL	N=Y34	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 04	G=VAR_GLOBAL	Com=BLDC Un Break
+++D=BOOL	N=Y35	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 05	G=VAR_GLOBAL	Com=Clamp/Un clamp
+++D=BOOL	N=Y36	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 06	G=VAR_GLOBAL	Com=BLDC EXT/INT SP
+++D=BOOL	N=Y37	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 07	G=VAR_GLOBAL	Com=BLDC Reset
+++D=BOOL	N=Y38	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 08	G=VAR_GLOBAL	Com=Forward Stopper
+++D=BOOL	N=Y39	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 09	G=VAR_GLOBAL	Com=Backward Stopper
+++D=BOOL	N=Y40	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 10	G=VAR_GLOBAL	Com=Shutter valve
+++D=BOOL	N=Y41	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 11	G=VAR_GLOBAL	Com=Lift board
+++D=BOOL	N=Y42	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 12	G=VAR_GLOBAL	Com=Vacuum valve
+++D=BOOL	N=Y43	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 13	G=VAR_GLOBAL	Com=Shake valve
+++D=BOOL	N=Y44	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 14	G=VAR_GLOBAL	Com=Release valve
+++D=BOOL	N=Y45	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 15	G=VAR_GLOBAL
+++D=BOOL	N=Y46	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 16	G=VAR_GLOBAL
+++D=BOOL	N=Y47	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 17	G=VAR_GLOBAL
+++D=BOOL	N=Y48	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 18	G=VAR_GLOBAL
+++D=BOOL	N=Y49	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 19	G=VAR_GLOBAL
+++D=BOOL	N=Y50	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 20	G=VAR_GLOBAL
+++D=BOOL	N=Y51	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 21	G=VAR_GLOBAL
+++D=BOOL	N=Y52	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 22	G=VAR_GLOBAL
+++D=BOOL	N=Y53	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 23	G=VAR_GLOBAL
+++D=BOOL	N=Y54	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 24	G=VAR_GLOBAL
+++D=BOOL	N=Y55	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 25	G=VAR_GLOBAL
+++D=BOOL	N=Y56	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 26	G=VAR_GLOBAL
+++D=BOOL	N=Y57	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 27	G=VAR_GLOBAL
+++D=BOOL	N=Y58	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 28	G=VAR_GLOBAL
+++D=BOOL	N=Y59	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 29	G=VAR_GLOBAL
+++D=BOOL	N=Y60	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 30	G=VAR_GLOBAL
+++D=BOOL	N=Y61	AT=IOBus://unit#2/Output Bit 32 bits/Output Bit 31	G=VAR_GLOBAL
+++D=BOOL	N=MC_EMG	G=VAR_GLOBAL
+++D=BOOL	N=Auto_Run	AT=%W10.01	G=VAR_GLOBAL
+++D=BOOL	N=SV1_ERR	AT=%W100.6	G=VAR_GLOBAL
+++D=BOOL	N=SV2_ERR	AT=%W200.6	G=VAR_GLOBAL
+++D=BOOL	N=HMI_AUTO	AT=%W10.00	Ord=2	G=VAR_GLOBAL
+++D=ARRAY[1..10] OF SV_DATA	N=SV1_POS	AT=%D1100	R=1	G=VAR_GLOBAL
+++D=ARRAY[1..10] OF SV_DATA	N=SV2_POS	AT=%D2100	R=1	G=VAR_GLOBAL
+++D=BOOL	N=SV1_Ready	AT=%W100.1	G=VAR_GLOBAL
+++D=BOOL	N=SV2_Ready	AT=%W200.1	G=VAR_GLOBAL
+++D=BOOL	N=MANUAL_MOD	G=VAR_GLOBAL
+++D=BOOL	N=Running_Err	G=VAR_GLOBAL
+++D=BOOL	N=Prohibit_Pickup	G=VAR_GLOBAL
+++D=BOOL	N=SV2_ABS_DONE	G=VAR_GLOBAL
+++D=BOOL	N=SV1_ABS_DONE	G=VAR_GLOBAL
+++D=BOOL	N=T_SV2_P1	G=VAR_GLOBAL
+++D=BOOL	N=T_SV1_P1	G=VAR_GLOBAL
+++D=BOOL	N=T_SV2_P2	G=VAR_GLOBAL
+++D=BOOL	N=T_SV1_P2	G=VAR_GLOBAL
+++D=BOOL	N=T_SV2_P4	G=VAR_GLOBAL
+++D=BOOL	N=Pickup_OK	G=VAR_GLOBAL
+++D=BOOL	N=C_Allow_Pickup	G=VAR_GLOBAL
+++D=BOOL	N=Align_For_Cart	G=VAR_GLOBAL
+++D=LREAL	N=SV1_CUR_POS	AT=%D1000	R=1	G=VAR_GLOBAL
+++D=LREAL	N=SV2_CUR_POS	AT=%D2000	R=1	G=VAR_GLOBAL
+++D=INT	N=Run_Mod	AT=%D0	R=1	Ord=1	G=VAR_GLOBAL
+++D=BOOL	N=SV1_Busy	Ord=1	G=VAR_GLOBAL
+++D=BOOL	N=SV2_Busy	G=VAR_GLOBAL
+++D=INT	N=Speed_Percent	AT=%D10	R=1	G=VAR_GLOBAL
+++D=BOOL	N=U_SV2_P3	G=VAR_GLOBAL
+++D=BOOL	N=U_SV2_P1	G=VAR_GLOBAL
+++D=BOOL	N=U_SV1_P1	G=VAR_GLOBAL
+++D=BOOL	N=U_SV2_P2	G=VAR_GLOBAL
+++D=BOOL	N=U_Pickup	G=VAR_GLOBAL
+++D=BOOL	N=U_SV1_P2	G=VAR_GLOBAL
+++D=BOOL	N=U_SV2_P5	G=VAR_GLOBAL
+++D=BOOL	N=U_SV1_P3	G=VAR_GLOBAL
+++D=BOOL	N=U_SV2_P7	G=VAR_GLOBAL
+++D=BOOL	N=U_SV1_P6	G=VAR_GLOBAL
+++D=BOOL	N=U_Release	G=VAR_GLOBAL
+++D=BOOL	N=U_SV1_JOG_TO_ORG	G=VAR_GLOBAL
+++D=BOOL	N=U_Shake	G=VAR_GLOBAL
+++D=BOOL	N=U_Anti_Drop	G=VAR_GLOBAL
+++D=BOOL	N=U_Un_Shake	G=VAR_GLOBAL
+++D=BOOL	N=U_SV1_P4	G=VAR_GLOBAL	Com=Anti drop
+++D=BOOL	N=U_SV2_P8	G=VAR_GLOBAL	Com=Anti drop buff
+++D=BOOL	N=Pickup_OK_SV2_P1	G=VAR_GLOBAL
+++D=LREAL	N=SV2_New_Speed	Ord=5	G=VAR_GLOBAL
+++D=BOOL	N=U_SV2_P5_Low_SP	G=VAR_GLOBAL
+++D=BOOL	N=T_SV2_P4_Low_SP	G=VAR_GLOBAL	Com=Test SV2_P4 low sp
+++D=BOOL	N=B_SV2_P7_Low_SP	G=VAR_GLOBAL	Com=Load to buffer
+++D=BOOL	N=B_U_SV2_P7_Low_SP	G=VAR_GLOBAL	Com=Unload from buffer
+++D=BOOL	N=B_SV2_Low_SP_UnLoad_Fr_Buff	G=VAR_GLOBAL
+++D=BOOL	N=Cart_Ready	Ord=10	G=VAR_GLOBAL
+++D=BOOL	N=Full_Cart_Stop	Ord=9	G=VAR_GLOBAL
+++D=BOOL	N=Down_Car_Req	Ord=13	G=VAR_GLOBAL
+++D=BOOL	N=U_Up_Forward_Stopper	G=VAR_GLOBAL	Com=Prepare full cart
+++D=BOOL	N=Cart_Over_Load	G=VAR_GLOBAL
+++D=BOOL	N=Forward_Stopper_Down	G=VAR_GLOBAL
+++D=BOOL	N=Down_Cart_Prohibit	G=VAR_GLOBAL
+++D=BOOL	N=Door_Open	G=VAR_GLOBAL
+++D=BOOL	N=PAUSE_MC	G=VAR_GLOBAL
+++D=BOOL	N=Stop_Cycle	Ord=7	G=VAR_GLOBAL
+++D=BOOL	N=Buffer_Over_Load	G=VAR_GLOBAL
+++D=BOOL	N=Stop_Cycle_Req	G=VAR_GLOBAL
+++D=BOOL	N=U_Stop_Cycle_Done	G=VAR_GLOBAL
+++D=BOOL	N=T_Stop_Cycle_Done	G=VAR_GLOBAL
+++D=BOOL	N=T_Restart_SV2	G=VAR_GLOBAL
+++D=BOOL	N=U_Restart_SV2	G=VAR_GLOBAL
+++D=BOOL	N=U_Release_Vacuum_Valve	Ord=4	G=VAR_GLOBAL
+++D=BOOL	N=Drop_Board	Ord=2	G=VAR_GLOBAL
+++D=BOOL	N=Start_Cycle_Centerring	G=VAR_GLOBAL
+++D=BOOL	N=Cycle_Over_Time	G=VAR_GLOBAL
+++D=BOOL	N=Running_Alarm	G=VAR_GLOBAL
+++D=BOOL	N=Prepare_Full_Cart_1st	G=VAR_GLOBAL
+++D=BOOL	N=Prepare_Full_Cart_2nd	G=VAR_GLOBAL
+++D=BOOL	N=U_Blower	G=VAR_GLOBAL
+++D=BOOL	N=Board_Stuck	Ord=2	G=VAR_GLOBAL
+++D=BOOL	N=Free_JOG	AT=%W320.07	G=VAR_GLOBAL
+++D=BOOL	N=Cyl_Up_Timeout	G=VAR_GLOBAL
+++D=BOOL	N=Release_Real	G=VAR_GLOBAL
+++D=LREAL	N=Cart_Overload_Setting	AT=%D60	R=1	G=VAR_GLOBAL
+++D=LREAL	N=Buffer_Overload_Setting	AT=%D64	R=1	G=VAR_GLOBAL
+++D=BOOL	N=AL_Release_Board	Ord=2	G=VAR_GLOBAL
+++D=BOOL	N=AL_Cart_Not_OK	G=VAR_GLOBAL
+++D=BOOL	N=AL_Before_Start	Ord=2	G=VAR_GLOBAL

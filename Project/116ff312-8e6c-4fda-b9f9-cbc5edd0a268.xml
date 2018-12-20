@@ -1,0 +1,12 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=ARRAY[0..99] OF BOOL	N=DATA	G=VAR
+++D=INT	N=n	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Excute	Ord=0	G=VAR_INPUT
+++D=INT	N=Value	Ord=1	G=VAR_INPUT
+++D=INT	N=Step_No	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Done	Ord=3	G=VAR_OUTPUT
+++D=ARRAY[0..99] OF BOOL	N=Step_Run	Ord=4	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

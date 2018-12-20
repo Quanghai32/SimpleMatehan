@@ -1,0 +1,10 @@
+﻿{"CLs":[{"__type":"LD","Var":"Center_Stage[2]"},{"__type":"LD","Ix":1,"Var":"Center_Stage[4]","Y":1},{"__type":"ST","Ix":2,"Var":"C_CV_Forward","X":1}],"LRI":3,"RRI":4,"VLs":[{"Ix":5,"X":1}]}
+{"CLs":[{"__type":"LD","Var":"Center_Stage[19]"},{"__type":"ST","Ix":1,"Var":"C_CV_Backward","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Center_Stage[18]"},{"__type":"ST","Ix":1,"Var":"C_Backward_Stopper_Up","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Center_Stage[21]"},{"__type":"LD","Ix":1,"Var":"Center_Stage[22]","Y":1},{"__type":"ST","Ix":2,"Var":"C_Backward_Stopper_Down","X":1}],"LRI":3,"RRI":4,"VLs":[{"Ix":5,"X":1}]}
+{"CLs":[{"__type":"LD","Var":"Center_Stage[8]"},{"__type":"LD","Ix":1,"Var":"Center_Stage[13]","Y":1},{"__type":"ST","Ix":2,"Var":"C_Clamp_L_SP","X":1}],"CMT":"---------------------------------------------------------------CLamp---------------------------------------------------------------","LRI":3,"RRI":4,"VLs":[{"Ix":5,"X":1}]}
+{"CLs":[{"__type":"LD","Var":"Center_Stage[7]"},{"__type":"LD","Ix":1,"Var":"Center_Stage[14]","Y":1},{"__type":"ST","Ix":2,"Var":"C_Clamp_H_SP","X":1}],"LRI":3,"RRI":4,"VLs":[{"Ix":5,"X":1}]}
+{"CLs":[{"__type":"LD","Var":"Center_Stage[0]"},{"__type":"LD","Ix":1,"Var":"Center_Stage[10]","Y":1},{"__type":"ST","Ix":2,"Var":"C_U_Clamp_H_SP","X":1}],"LRI":3,"RRI":4,"VLs":[{"Ix":5,"X":1}]}
+{"CLs":[{"__type":"LD","Var":"Center_Stage[5]"},{"__type":"ST","Ix":1,"Var":"C_Center_Cyl_Up","X":1}],"CMT":"--------------------------------------------------------------Align cyl--------------------------------------------------------------","LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Center_Stage[11]"},{"__type":"ST","Ix":1,"Var":"C_Center_Cyl_Down","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Center_Stage[12]"},{"__type":"LD","Ix":1,"Var":"C_Allow_Pickup","Y":1},{"__type":"LD","Ix":2,"Not":true,"Var":"Pickup_OK_SV2_P1","X":1},{"__type":"LD","Ix":3,"Var":"Auto_Run","X":2},{"__type":"ST","Ix":4,"Var":"C_Allow_Pickup","X":3}],"LRI":5,"RRI":6,"VLs":[{"Ix":7,"X":1}]}

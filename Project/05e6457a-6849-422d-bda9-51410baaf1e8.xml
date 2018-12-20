@@ -1,0 +1,204 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=DECO_FB	N=Auto_Deco	G=VAR
+++D=DECO_FB	N=Auto_Step_FB	G=VAR
+++D=ARRAY[0..99] OF BOOL	N=Auto_Stage	G=VAR	EC=<ECs><EC EK="[0]" C="Unloader start. Check pickup" /><EC EK="[1]" C="Check " /><EC EK="[2]" C="SV2_P1" /><EC EK="[3]" C="SV1_P1" /><EC EK="[4]" C="Check have board" /><EC EK="[5]" C="SV2_P3" /><EC EK="[6]" C="SV2_P2" /><EC EK="[7]" C="Check board in SV2_P2" /><EC EK="[8]" C="Pickup" /><EC EK="[16]" C="Delay AF pickup" /><EC EK="[9]" C="SV2_P1" /><EC EK="[10]" C="SV1_P2" /><EC EK="[11]" C="SV2_P5 (P4 cal)" /><EC EK="[12]" C="Release board in cart" /><EC EK="[15]" C="Delay AF Release in cart" /><EC EK="[17]" C="SV1_P3 buffer" /><EC EK="[19]" C="Release board in Buffer" /><EC EK="[29]" C="Delay AF Release in Buffer" /><EC EK="[28]" C="SV2_P1 begin unload from buffer" /><EC EK="[20]" C="SV1_P3 unload from buffer" /><EC EK="[21]" C="SV2_P7 (P6 Load From Buffer)" /><EC EK="[22]" C="Pickup in buffer bu vacuum" /><EC EK="[23]" C="Delay AF Pickup in buffer" /><EC EK="[30]" C="Shake in buffer" /><EC EK="[24]" C="SV2 Anti drop in buffer" /><EC EK="[26]" C="Jog to origin sensor" /><EC EK="[31]" C="Un shake in buffer" /><EC EK="[25]" C="SV2_P1 after pickup in buffer" /><EC EK="[27]" C="SV1_P5 inc move to cart" /><EC EK="[18]" C="SV2_P7 (P6 UnLoad to Buffer)" /><EC EK="[32]" C="Delay AF hi ORG SS" /><EC EK="[33]" C="Pickup_Blower_Buff" /><EC EK="[34]" C="Delay AF Anti drop buff" /><EC EK="[35]" C="SV1 anti drop in buffer" /></ECs>
+++D=UINT	N=AU_Step	G=VAR
+++D=DECO_FB	N=Test_Deco	G=VAR
+++D=ARRAY[0..99] OF BOOL	N=Test_Stage	G=VAR	EC=<ECs><EC EK="[0]" C="T_SV2_P1" /><EC EK="[1]" C="T_SV1_P1" /><EC EK="[2]" C="T_SV2_P2" /><EC EK="[3]" C="T_Delay_SV2_P2" /><EC EK="[4]" C="T_SV2_P1" /><EC EK="[5]" C="T_SV1_P2" /><EC EK="[6]" C="T_SV2_P4" /><EC EK="[7]" C="T_Delay_SV2_P4" /></ECs>
+++D=UINT	N=Test_Step	G=VAR
+++D=TON	N=T_Test_Delay_SV2_P2	G=VAR
+++D=TON	N=T_Test_Delay_SV2_P4	G=VAR
+++D=BOOL	N=Buffer_Allow	G=VAR
+++D=BOOL	N=Stop_Cycle	G=VAR
+++D=BOOL	N=Request_Down_Cart	G=VAR
+++D=BOOL	N=Req_Down_Cart_OK	G=VAR
+++D=BOOL	N=Buffer_Allow_Whe_Wait	G=VAR
+++D=ton	N=T_Delay_AF_Pickup_CV	G=VAR
+++D=BOOL	N=First_Cycle	G=VAR
+++D=LREAL	N=SV2_P4_Begin_Low_SP	G=VAR
+++D=MC_SetOverride	N=SV2_P4_Reduce_SP	G=VAR
+++D=ton	N=T_Del_AF_Release_In_Cart	G=VAR	Com=Delay AF release board in cart
+++D=BOOL	N=First_Buffer	G=VAR
+++D=LREAL	N=SV2_P5_Begin_Low_SP	G=VAR
+++D=MC_SetOverride	N=SV2_P5_Low_SP	G=VAR
+++D=ton	N=T_Delay_AF_Release_Buff	G=VAR
+++D=MC_SetOverride	N=SV2_P5_Low_SP_Unload	G=VAR
+++D=ton	N=T_DelayAfPickupInBuff	G=VAR
+++D=BOOL	N=Buff_Anti_Drop_Fin	G=VAR
+++D=BOOL	N=SV1_P4_Done	G=VAR	Com=SV1 antidrop
+++D=BOOL	N=SV2_P6_Done	G=VAR	Com=SV2 anti drop done
+++D=ton	N=T_Shake_In_Buff	G=VAR
+++D=INT	N=Shake_CNT_Buff	G=VAR
+++D=INT	N=Shake_Number_Target	AT=%D40	R=1	G=VAR
+++D=LREAL	N=Board_Thickness	AT=%D42	R=1	G=VAR
+++D=ton	N=T_Un_Shake_Buff	G=VAR
+++D=MC_SetOverride	N=SV1_P1_Low_Buff	G=VAR
+++D=MC_SetOverride	N=Test_SV2_P4_Low	G=VAR
+++D=LREAL	N=SV2_P4_Low_SP_Add	R=1	G=VAR
+++D=LREAL	N=SV2_P4_Low_SP_Factor	R=1	G=VAR
+++D=BOOL	N=SV2_P8_Done	G=VAR	Com=SV2 Anti drop buffer
+++D=SV2_ADD_CAL_FB	N=SV2_P4_CAL_FB	G=VAR
+++D=BOOL	N=SV2_P5_Limit_Src	G=VAR
+++D=LREAL	N=SV2_P7_Begin_Low_SP	G=VAR
+++D=BOOL	N=Cart_Is_1st_Time	G=VAR
+++D=BOOL	N=Cart_Limit_Src	G=VAR
+++D=MC_SetOverride	N=SV2_P5_Reduce_SP	G=VAR
+++D=LREAL	N=SV2_P5_SP_Low_Factor	G=VAR
+++D=BOOL	N=allow_test	G=VAR
+++D=MC_SetOverride	N=Test_SV2_P1_Low	G=VAR
+++D=BOOL	N=Test_SV1_P1_Low	G=VAR
+++D=BOOL	N=Test_SV2_P4_Low_SP	G=VAR
+++D=INT	N=Total_Board_Per_Cart	AT=%D26	R=1	G=VAR
+++D=DINT	N=Total_Amount_Sheet	AT=%D24	R=1	G=VAR
+++D=INT	N=Board_In_Cart_Fr_Limit	AT=%D21	R=1	G=VAR	Com=Sheet CNT form limit
+++D=INT	N=Board_In_Buff_CNT	AT=%D22	R=1	G=VAR
+++D=INT	N=Board_In_Buff_Fr_Limit	AT=%D23	R=1	G=VAR
+++D=INT	N=Board_In_Cart_CNT	AT=%D20	R=1	G=VAR
+++D=INT	N=Prepare_Full_Cart_1	AT=%D27	R=1	G=VAR
+++D=INT	N=Prepare_Full_Cart_2	AT=%D28	R=1	G=VAR
+++D=INT	N=Total_Board_Per_Cart_1	G=VAR
+++D=BOOL	N=Buff_Limit_Src	G=VAR
+++D=BOOL	N=First_UnLoad_To_Buff	G=VAR
+++D=BOOL	N=First_Load_Fr_Buff	G=VAR
+++D=TON	N=T_Delay_Release	G=VAR
+++D=BOOL	N=tess	G=VAR
+++D=BOOL	N=tt	G=VAR
+++D=BOOL	N=Keep_Release	G=VAR
+++D=BOOL	N=Gap2Board_OK	G=VAR
+++D=TON	N=T_Gap_2_Board_OK	G=VAR
+++D=TON	N=T_Delay_AF_Hit_ORG_SS	G=VAR
+++D=SV2_ADD_CAL_FB	N=SV2_P7_CAL_FB	G=VAR
+++D=SV2_ADD_CAL_FB	N=SV2_P5_CAL_FB	G=VAR
+++D=BOOL	N=Buffer_Ready	G=VAR
+++D=BOOL	N=Temp_Release_Pick_Buff	G=VAR
+++D=TON	N=T_Wait_Pickup_Blower	G=VAR
+++D=TON	N=T_Delay_Pickup_Buff_Vacuum	G=VAR
+++D=TON	N=T_Delay_AF_Anti_Drop	G=VAR
+++D=BOOL	N=Check_Drop_Board	G=VAR
+++D=BOOL	N=Board_Not_Yet_Pickup_Buff	G=VAR
+++D=BOOL	N=CycleTime_Cal	G=VAR
+++D=BOOL	N=CT_U_CV_Cart	G=VAR
+++D=BOOL	N=CT_U_CV_Buffer	G=VAR
+++D=BOOL	N=CT_Buffer_Cart	G=VAR
+++D=TON	N=T_OverTime	G=VAR
+++D=TIME	N=CycleTime	G=VAR
+++D=DWORD	N=CycleTimeFloat	G=VAR
+++D=CTUD_DINT	N=CNT_Cycletime	G=VAR
+++D=BOOL	N=CNT_INC	G=VAR
+++D=DINT	N=CNT_Value	R=1	G=VAR
+++D=DINT	N=CNT_Value_X_10	G=VAR
+++D=REAL	N=Cycle_Time_Value	AT=%D30	R=1	G=VAR
+++D=REAL	N=Cycle_Time_X_10	G=VAR
+++D=BOOL	N=Reset_Cycletime_CNT	G=VAR
+++D=UINT	N=Full_Cart_Step	G=VAR
+++D=ARRAY[0..99] OF BOOL	N=Full_Cart_Stage	G=VAR	EC=<ECs><EC EK="[0]" C="Standby" /><EC EK="[1]" C="Alarm full cart 1st" /><EC EK="[2]" C="Allready reset full cart 1" /><EC EK="[3]" C="Alarm full cart 2nd" /><EC EK="[4]" C="Allready reset full cart 2" /></ECs>
+++D=UINT	N=Total_Board_In_Ship	AT=%D29	R=1	G=VAR
+++D=TON	N=T_Blower_Timeout	G=VAR
+++D=BOOL	N=Buffer_Setting_Allow	AT=%H0.00	R=1	G=VAR
+++D=BOOL	N=Sampling_Production	AT=%W10.05	G=VAR
+++D=DATE_AND_TIME	N=Current_Time	G=VAR
+++D=BOOL	N=Set_Syste_Time	G=VAR
+++D=DATE_AND_TIME	N=Time_To_Set	G=VAR
+++D=_sDT	N=Current_Time_Str	G=VAR
+++D=USINT	N=CurrentHour	AT=%D83	R=1	G=VAR
+++D=UINT	N=CurrentYear	AT=%D80	R=1	G=VAR
+++D=USINT	N=CurrentMonth	AT=%D81	R=1	G=VAR
+++D=USINT	N=CurrentDay	AT=%D82	R=1	G=VAR
+++D=USINT	N=CurrentMin	AT=%D84	R=1	G=VAR
+++D=USINT	N=CurrentSec	AT=%D85	R=1	G=VAR
+++D=BOOL	N=Update_HMI_Time	AT=%W10.06	G=VAR
+++D=TON	N=Wait_Update_HMI_Time	G=VAR
+++D=TON	N=Wait_Sampling_Product	G=VAR
+++D=_sDT	N=Time_To_Set_Str	G=VAR
+++D=USINT	N=SetSec	AT=%D95	R=1	G=VAR
+++D=UINT	N=SetYear	AT=%D90	R=1	G=VAR
+++D=USINT	N=SetMonth	AT=%D91	R=1	G=VAR
+++D=USINT	N=SetDay	AT=%D92	R=1	G=VAR
+++D=USINT	N=SetHour	AT=%D93	R=1	G=VAR
+++D=USINT	N=SetMin	AT=%D94	R=1	G=VAR
+++D=BOOL	N=Set_System_Time	AT=%W10.07	G=VAR
+++D=LREAL	N=Cart_1st_Begin_Low_SP	G=VAR
+++D=LREAL	N=Buff_1st_Begin_Low_SP	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=Auto_Run	G=VAR_EXTERNAL
+++D=BOOL	N=SV2_ABS_DONE	G=VAR_EXTERNAL
+++D=BOOL	N=SV1_ABS_DONE	G=VAR_EXTERNAL
+++D=BOOL	N=T_SV2_P1	G=VAR_EXTERNAL
+++D=BOOL	N=T_SV1_P1	G=VAR_EXTERNAL
+++D=BOOL	N=T_SV2_P2	G=VAR_EXTERNAL
+++D=BOOL	N=T_SV1_P2	G=VAR_EXTERNAL
+++D=BOOL	N=T_SV2_P4	G=VAR_EXTERNAL
+++D=BOOL	N=X43	G=VAR_EXTERNAL
+++D=BOOL	N=Pickup_OK	G=VAR_EXTERNAL
+++D=BOOL	N=C_Allow_Pickup	G=VAR_EXTERNAL
+++D=BOOL	N=Align_For_Cart	G=VAR_EXTERNAL
+++D=LREAL	N=SV2_CUR_POS	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=MC_Axis001	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=X46	G=VAR_EXTERNAL
+++D=BOOL	N=X41	G=VAR_EXTERNAL
+++D=LREAL	N=SV1_CUR_POS	G=VAR_EXTERNAL
+++D=ARRAY[1..10] OF SV_DATA	N=SV1_POS	G=VAR_EXTERNAL	EC=<ECs><EC EK="[6].Address" C="SV1 ABS move Buffer to Cart" /><EC EK="[5].Address" C="SV1 Setting INC move Buff-Cart" /></ECs>
+++D=ARRAY[1..10] OF SV_DATA	N=SV2_POS	G=VAR_EXTERNAL	EC=<ECs><EC EK="[7].Address" C="Buff_Cal" /><EC EK="[8].Address" C="Buff anti drop" /></ECs>
+++D=INT	N=Run_Mod	G=VAR_EXTERNAL
+++D=BOOL	N=U_SV2_P3	G=VAR_EXTERNAL
+++D=BOOL	N=U_SV2_P1	G=VAR_EXTERNAL
+++D=BOOL	N=U_SV1_P1	G=VAR_EXTERNAL
+++D=BOOL	N=U_SV2_P2	G=VAR_EXTERNAL
+++D=BOOL	N=U_Pickup	G=VAR_EXTERNAL
+++D=BOOL	N=U_SV1_P2	G=VAR_EXTERNAL
+++D=BOOL	N=Cart_Ready	G=VAR_EXTERNAL
+++D=BOOL	N=Prohibit_Pickup	G=VAR_EXTERNAL
+++D=BOOL	N=Y41	G=VAR_EXTERNAL
+++D=BOOL	N=U_SV2_P5	G=VAR_EXTERNAL
+++D=BOOL	N=U_SV1_P3	G=VAR_EXTERNAL
+++D=BOOL	N=U_SV2_P7	G=VAR_EXTERNAL
+++D=BOOL	N=U_SV1_P6	G=VAR_EXTERNAL
+++D=BOOL	N=U_Release	G=VAR_EXTERNAL
+++D=BOOL	N=U_SV1_JOG_TO_ORG	G=VAR_EXTERNAL
+++D=BOOL	N=U_Shake	G=VAR_EXTERNAL
+++D=BOOL	N=U_Anti_Drop	G=VAR_EXTERNAL
+++D=BOOL	N=U_Un_Shake	G=VAR_EXTERNAL
+++D=BOOL	N=Pickup_OK_SV2_P1	G=VAR_EXTERNAL
+++D=LREAL	N=SV2_New_Speed	G=VAR_EXTERNAL
+++D=BOOL	N=U_SV2_P5_Low_SP	G=VAR_EXTERNAL
+++D=BOOL	N=B_SV2_P7_Low_SP	G=VAR_EXTERNAL
+++D=BOOL	N=B_U_SV2_P7_Low_SP	G=VAR_EXTERNAL
+++D=BOOL	N=B_SV2_Low_SP_UnLoad_Fr_Buff	G=VAR_EXTERNAL
+++D=BOOL	N=T_SV2_P4_Low_SP	G=VAR_EXTERNAL
+++D=BOOL	N=Full_Cart_Stop	G=VAR_EXTERNAL
+++D=BOOL	N=U_Up_Forward_Stopper	G=VAR_EXTERNAL	Com=Prepare full cart
+++D=BOOL	N=X7	G=VAR_EXTERNAL
+++D=BOOL	N=Forward_Stopper_Down	G=VAR_EXTERNAL
+++D=BOOL	N=Y38	G=VAR_EXTERNAL
+++D=BOOL	N=X47	G=VAR_EXTERNAL
+++D=BOOL	N=X36	G=VAR_EXTERNAL
+++D=BOOL	N=X40	G=VAR_EXTERNAL
+++D=BOOL	N=X37	G=VAR_EXTERNAL
+++D=BOOL	N=X38	G=VAR_EXTERNAL
+++D=BOOL	N=U_SV1_P4	G=VAR_EXTERNAL
+++D=BOOL	N=U_SV2_P8	G=VAR_EXTERNAL
+++D=BOOL	N=X39	G=VAR_EXTERNAL
+++D=BOOL	N=Down_Cart_Prohibit	G=VAR_EXTERNAL
+++D=BOOL	N=Down_Car_Req	G=VAR_EXTERNAL
+++D=BOOL	N=Stop_Cycle_Req	G=VAR_EXTERNAL
+++D=BOOL	N=U_Stop_Cycle_Done	G=VAR_EXTERNAL
+++D=BOOL	N=T_Stop_Cycle_Done	G=VAR_EXTERNAL
+++D=BOOL	N=T_Restart_SV2	G=VAR_EXTERNAL
+++D=BOOL	N=U_Restart_SV2	G=VAR_EXTERNAL
+++D=BOOL	N=U_Release_Vacuum_Valve	G=VAR_EXTERNAL
+++D=BOOL	N=X42	G=VAR_EXTERNAL
+++D=BOOL	N=Drop_Board	G=VAR_EXTERNAL
+++D=BOOL	N=Start_Cycle_Centerring	G=VAR_EXTERNAL
+++D=BOOL	N=Cycle_Over_Time	G=VAR_EXTERNAL
+++D=BOOL	N=X3	G=VAR_EXTERNAL
+++D=BOOL	N=X4	G=VAR_EXTERNAL
+++D=BOOL	N=Prepare_Full_Cart_1st	G=VAR_EXTERNAL
+++D=BOOL	N=Prepare_Full_Cart_2nd	G=VAR_EXTERNAL
+++D=BOOL	N=Cart_Over_Load	G=VAR_EXTERNAL
+++D=BOOL	N=PAUSE_MC	G=VAR_EXTERNAL
+++D=BOOL	N=U_Blower	G=VAR_EXTERNAL
+++D=BOOL	N=Release_Real	G=VAR_EXTERNAL
+++D=LREAL	N=Cart_Overload_Setting	G=VAR_EXTERNAL
+++D=LREAL	N=Buffer_Overload_Setting	G=VAR_EXTERNAL

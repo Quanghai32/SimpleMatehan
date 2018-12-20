@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <GeneralSettingsData TaskExecutionCondition="2000" ExecutionPriority="4" CycleTimeOverDetection="Warning" TimeOutValue="10000" VariableAccessTimeRatio="3">
+    <ExecutionConditionVariable VariableName="" Condition="" Constant="" />
+    <ExecutionConditionCJUnit ExternalInputUnit="">
+      <ExecutionConditionInterruptionUnit UnitNumber="" InputContact="" EdgeDetection="" />
+      <ExecutionConditionSiouCpuUnit CJUnitTaskNo="" />
+    </ExecutionConditionCJUnit>
+  </GeneralSettingsData>
+  <Programs>
+    <AssociatedProgramData ProgramName="Mahine_State" InstanceName="Mahine_State" IniFileTrackingId="19a836a4b2d640c9ad29f763e534bf01" StartupSetting="TRUE" SequenceNumber="1" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Auto" InstanceName="Auto" IniFileTrackingId="fb5858fe26294e0b8fb71bce59d0d137" StartupSetting="TRUE" SequenceNumber="2" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="SV1" InstanceName="SV1" IniFileTrackingId="a5972afb6aa04a9f802f0ccc98bdfb35" StartupSetting="TRUE" SequenceNumber="3" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="SV2" InstanceName="SV2" IniFileTrackingId="727526731236402895ddfb00a32b4a07" StartupSetting="TRUE" SequenceNumber="4" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Liftup" InstanceName="Liftup" IniFileTrackingId="ab89da2e7c8840be8cbb2079e3ee73a7" StartupSetting="TRUE" SequenceNumber="5" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Centerring" InstanceName="Centerring" IniFileTrackingId="067084afc40745f58f80ebc01fbfb116" StartupSetting="TRUE" SequenceNumber="6" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Pickup" InstanceName="Pickup" IniFileTrackingId="501a0e78ef224de595b3fdfbd687f606" StartupSetting="TRUE" SequenceNumber="7" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="HMI" InstanceName="HMI" IniFileTrackingId="f03ccd62244845d9862669260d40fb8c" StartupSetting="TRUE" SequenceNumber="8" IsDebugProgram="false" />
+  </Programs>
+  <RefreshUnitIds>
+    <RefreshUnitId RefreshUnitId="fa148c36-5fbc-42e9-a78c-1f2e746ba0a5" />
+    <RefreshUnitId RefreshUnitId="aaa16d45-af7f-49ac-8ac6-5feea6cd8ba4" />
+    <RefreshUnitId RefreshUnitId="b99eb8b6-0a57-4887-a5a0-2050b5cfeeb8" />
+    <RefreshUnitId RefreshUnitId="e3895583-e741-4be6-85bb-79f70022be53" />
+    <RefreshUnitId RefreshUnitId="2aae7078-da1e-45f2-833d-cffc63a1dd69" />
+  </RefreshUnitIds>
+  <TaskInterfaceVariables version="1" />
+</data>

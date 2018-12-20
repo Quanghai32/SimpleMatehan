@@ -1,0 +1,27 @@
+﻿{"CLs":[{"__type":"F","In":[{"__type":"PF","Arg":"EN"},{"__type":"PRM","Arg":"In1","Ix":1,"Type":"ANY_ELEMENTARY, ENUM","Var":"AL_Word_1"},{"__type":"PRM","Arg":"In2","Ix":2,"Type":"ANY_ELEMENTARY, ENUM","Var":"UINT#0"}],"Ix":5,"Name":"<>","Out":[{"__type":"PF","Arg":""}]},{"__type":"F","In":[{"__type":"PF","Arg":"EN"},{"__type":"PRM","Arg":"In1","Ix":3,"Type":"ANY_ELEMENTARY, ENUM","Var":"AL_Word_2"},{"__type":"PRM","Arg":"In2","Ix":4,"Type":"ANY_ELEMENTARY, ENUM","Var":"UINT#0"}],"Ix":6,"Name":"<>","Out":[{"__type":"PF","Arg":""}],"Y":1},{"__type":"ST","Var":"HMI_Alarm","X":1}],"LRI":7,"RRI":8,"VLs":[{"Ix":9,"X":1}]}
+{"CLs":[{"__type":"LD","Var":"Door_Open"},{"__type":"ST","Ix":1,"Var":"AL_Door_Open","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Drop_Board"},{"__type":"ST","Ix":1,"Var":"AL_Drop_Board","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Not":true,"Var":"X48"},{"__type":"ST","Ix":1,"Var":"AL_Cart_Left","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Not":true,"Var":"X49"},{"__type":"ST","Ix":1,"Var":"AL_Cart_Right","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Not":true,"Var":"X1"},{"__type":"ST","Ix":1,"Var":"AL_EMG_Front","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Not":true,"Var":"X0"},{"__type":"ST","Ix":1,"Var":"AL_EMG_Side","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"SV1_ERR"},{"__type":"ST","Ix":1,"Var":"AL_SV1_ERR","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"SV2_ERR"},{"__type":"ST","Ix":1,"Var":"AL_SV2_ERR","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Not":true,"Var":"X7"},{"__type":"ST","Ix":1,"Var":"AL_Cart_Not_Ready","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"AL_Clamp_Err"},{"__type":"ST","Ix":1,"Var":"AL_Clamp_Err","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Cycle_Over_Time"},{"__type":"ST","Ix":1,"Var":"AL_Overtime","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Buffer_Over_Load"},{"__type":"ST","Ix":1,"Var":"AL_Buffer_Overload","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Cart_Over_Load"},{"__type":"ST","Ix":1,"Var":"AL_Cart_Overload","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Full_Cart_Stop"},{"__type":"LD","Ix":1,"Var":"AL_Full_Cart","Y":1},{"__type":"LD","Ix":2,"Not":true,"Var":"X4","X":1},{"__type":"ST","Ix":3,"Var":"AL_Full_Cart","X":2}],"LRI":4,"RRI":5,"VLs":[{"Ix":6,"X":1}]}
+{"CLs":[{"__type":"LD","Var":"Board_Stuck"},{"__type":"ST","Ix":1,"Var":"AL_Board_Stuck","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Not":true,"Var":"X10"},{"__type":"ST","Ix":1,"Var":"AL_CV_Not_Return","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"X12"},{"__type":"ST","Ix":1,"Var":"AL_Liftup_Err","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Not":true,"Var":"X9"},{"__type":"ST","Ix":1,"Var":"AL_Blower_Err","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Not":true,"Var":"X11"},{"__type":"ST","Ix":1,"Var":"AL_BLDC","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Cyl_Up_Timeout"},{"__type":"ST","Ix":1,"Var":"AL_CYL_TIMEOUT","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"AL_Picking_Board"},{"__type":"ST","Ix":1,"Var":"AL_Picking_Board","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Prepare_Full_Cart_1st"},{"__type":"ST","Ix":1,"Var":"AL_Prepare_Full_Cart_1","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Prepare_Full_Cart_2nd"},{"__type":"ST","Ix":1,"Var":"AL_Prepare_Full_Cart_2","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"AL_Release_Board"},{"__type":"ST","Ix":1,"Var":"AL_Release_BF_Start","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"AL_Full_Cart"},{"__type":"LD","Id":"8ddb7f1e-63b6-4bfb-b972-8746bd3edbda","Ix":1,"Up":true,"Var":"AL_Prepare_Full_Cart_1","Y":1},{"__type":"LD","Id":"b8079dfd-6295-40dc-808a-ccff6761b762","Ix":2,"Up":true,"Var":"AL_Prepare_Full_Cart_2","Y":2},{"__type":"LD","Ix":4,"Var":"Running_Alarm","Y":3},{"__type":"LD","Ix":3,"Not":true,"Var":"X4","X":1},{"__type":"ST","Ix":5,"Var":"Running_Alarm","X":2}],"LRI":6,"RRI":7,"VLs":[{"Ix":8,"X":1},{"Ix":8,"X":1,"Y":1},{"Ix":8,"X":1,"Y":2}]}
+{"CLs":[{"__type":"LD","Id":"617841fd-524c-47d0-85a3-5151000000c8","Up":true,"Var":"AL_Release_BF_Start"},{"__type":"LD","Ix":1,"Var":"AL_Before_Start","Y":1},{"__type":"LD","Ix":2,"Not":true,"Var":"X4","X":1},{"__type":"ST","Ix":3,"Var":"AL_Before_Start","X":2}],"LRI":4,"RRI":5,"VLs":[{"Ix":6,"X":1}]}

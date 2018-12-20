@@ -1,0 +1,66 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=SV1_ON	AT=%W100.0	G=VAR
+++D=BOOL	N=SV1_JOG_FOR	AT=%W100.2	G=VAR
+++D=BOOL	N=SV1_JOG_NEG	AT=%W100.3	G=VAR
+++D=BOOL	N=SV1_HOME	AT=%W100.4	G=VAR
+++D=BOOL	N=SV1_JOG_SEL_SP	AT=%W100.5	G=VAR
+++D=BOOL	N=SV1_STOP	G=VAR
+++D=LREAL	N=SV1_JOG_LOW_SP	AT=%D1004	R=1	G=VAR
+++D=LREAL	N=SV1_JOG_HIGH_SP	AT=%D1008	R=1	G=VAR
+++D=LREAL	N=SV1_JOG_SP	R=1	G=VAR
+++D=DWORD	N=SV1_ERR_CODE	AT=%D1012	R=1	G=VAR
+++D=MC_Home	N=SV1_HOME_FB	G=VAR
+++D=MC_Power	N=SV1_SV_ON	G=VAR
+++D=MC_MoveJog	N=SV1_JOG	G=VAR
+++D=MC_Stop	N=SV1_STOP_FB	G=VAR
+++D=MC_Reset	N=SV1_Reset	G=VAR
+++D=MC_Reset	N=SV1_Reset_FB	G=VAR
+++D=DINT	N=SV1_SEL_P_INDEX	AT=%D1052	R=1	G=VAR
+++D=BOOL	N=SV1_ABS_MOV	G=VAR
+++D=BOOL	N=SV1_ABS_MA_MOV	AT=%W101.00	G=VAR
+++D=BOOL	N=SV1_TEACH	AT=%W101.01	G=VAR
+++D=MC_MoveAbsolute	N=SV1_MOV_ABS_FB	G=VAR
+++D=BOOL	N=SV1_ALLOW	AT=%W101.02	G=VAR
+++D=DINT	N=SV1_SEL_POINT	AT=%D1050	R=1	G=VAR
+++D=DINT	N=HMI_SV1_SEL_POINT	G=VAR
+++D=BOOL	N=SV1_P1	G=VAR	Com=Org
+++D=BOOL	N=SV1_P2	G=VAR	Com=Cart
+++D=BOOL	N=SV2_P2	G=VAR
+++D=BOOL	N=SV1_P3	G=VAR	Com=Buffer
+++D=BOOL	N=SV1_P6	G=VAR	Com=Buff_Cart
+++D=BOOL	N=SV1_P4	G=VAR	Com=Anti drop buffer
+++D=ARRAY[0..99] OF BOOL	N=Auto_Stage	G=VAR	EC=<ECs><EC EK="[0]" C="Unloader start. Check pickup" /><EC EK="[1]" C="Check " /><EC EK="[2]" C="SV2_P1" /><EC EK="[3]" C="SV1_P1" /><EC EK="[4]" C="Check have board" /><EC EK="[5]" C="SV2_P3" /><EC EK="[6]" C="SV2_P2" /><EC EK="[7]" C="Check board in SV2_P2" /><EC EK="[8]" C="Pickup" /><EC EK="[16]" C="Delay AF pickup" /><EC EK="[9]" C="SV2_P1" /><EC EK="[10]" C="SV1_P2" /><EC EK="[11]" C="SV2_P4" /><EC EK="[12]" C="Release board in cart" /><EC EK="[15]" C="Delay AF Release in cart" /><EC EK="[17]" C="SV1_P3 buffer" /><EC EK="[19]" C="Release board in Buffer" /><EC EK="[29]" C="Delay AF Release in Buffer" /><EC EK="[28]" C="SV2_P1 begin unload from buffer" /><EC EK="[20]" C="SV2_P3 unload from buffer" /><EC EK="[21]" C="SV2_P5 Unload" /><EC EK="[22]" C="Pickup in buffer" /><EC EK="[23]" C="Delay AF Pickup in buffer" /><EC EK="[30]" C="Shake in buffer" /><EC EK="[24]" C="Anti drop in buffer" /><EC EK="[26]" C="Jog to origin sensor" /><EC EK="[31]" C="Un shake in buffer" /><EC EK="[25]" C="SV2_P1 after pickup in buffer" /><EC EK="[27]" C="SV1_P5 inc move to cart" /></ECs>
+++D=BOOL	N=SV1_JOG_NEG_ALLOW	G=VAR
+++D=MC_MoveJog	N=SV1_JOG_AUTO	G=VAR
+++D=MC_SetOverride	N=SV1_Change_SP_FB	G=VAR
+++D=LREAL	N=SV1_New_SP	G=VAR
+++D=LREAL	N=SV1_Speed_Cal	G=VAR
+++D=LREAL	N=Speed_Mul_100	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=_sAXIS_REF	N=MC_Axis000	Const=1	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=MC_Axis001	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=MC_EMG	G=VAR_EXTERNAL
+++D=BOOL	N=X4	G=VAR_EXTERNAL
+++D=BOOL	N=SV1_ERR	G=VAR_EXTERNAL
+++D=ARRAY[1..10] OF SV_DATA	N=SV1_POS	G=VAR_EXTERNAL
+++D=BOOL	N=SV1_Ready	G=VAR_EXTERNAL
+++D=BOOL	N=SV1_ABS_DONE	G=VAR_EXTERNAL
+++D=BOOL	N=T_SV1_P1	G=VAR_EXTERNAL
+++D=BOOL	N=T_SV1_P2	G=VAR_EXTERNAL
+++D=LREAL	N=SV1_CUR_POS	G=VAR_EXTERNAL
+++D=BOOL	N=SV1_Busy	G=VAR_EXTERNAL
+++D=BOOL	N=U_SV1_P1	G=VAR_EXTERNAL	Com=Org
+++D=BOOL	N=U_SV1_P2	G=VAR_EXTERNAL	Com=Cart
+++D=BOOL	N=U_SV1_P3	G=VAR_EXTERNAL	Com=Buffer
+++D=BOOL	N=U_SV1_P6	G=VAR_EXTERNAL	Com=ABS Buffer-Cart
+++D=BOOL	N=U_SV1_P4	G=VAR_EXTERNAL	Com=Anti drop
+++D=BOOL	N=U_SV2_P3	G=VAR_EXTERNAL
+++D=BOOL	N=X41	G=VAR_EXTERNAL
+++D=BOOL	N=U_SV1_JOG_TO_ORG	G=VAR_EXTERNAL
+++D=BOOL	N=PAUSE_MC	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_AUTO	G=VAR_EXTERNAL
+++D=INT	N=Speed_Percent	G=VAR_EXTERNAL
+++D=BOOL	N=Free_JOG	G=VAR_EXTERNAL
+++D=BOOL	N=MANUAL_MOD	G=VAR_EXTERNAL
