@@ -1,4 +1,4 @@
-﻿{"CLs":[{"__type":"LD","Var":"Center_Stage[2]"},{"__type":"LD","Ix":1,"Var":"Center_Stage[4]","Y":1},{"__type":"ST","Ix":2,"Var":"C_CV_Forward","X":1}],"LRI":3,"RRI":4,"VLs":[{"Ix":5,"X":1}]}
+﻿{"CLs":[{"__type":"LD","Var":"Center_Stage[2]"},{"__type":"LD","Ix":1,"Var":"Center_Stage[4]","Y":1},{"__type":"ST","Ix":2,"Var":"C_CV_Forward","X":1},{"__type":"ST","Ix":3,"Var":"Reset_Cycletime","X":1,"Y":1}],"LRI":4,"RRI":5,"VLs":[{"Ix":6,"X":1}]}
 {"CLs":[{"__type":"LD","Var":"Center_Stage[19]"},{"__type":"ST","Ix":1,"Var":"C_CV_Backward","X":1}],"LRI":2,"RRI":3,"VLs":[]}
 {"CLs":[{"__type":"LD","Var":"Center_Stage[18]"},{"__type":"ST","Ix":1,"Var":"C_Backward_Stopper_Up","X":1}],"LRI":2,"RRI":3,"VLs":[]}
 {"CLs":[{"__type":"LD","Var":"Center_Stage[21]"},{"__type":"LD","Ix":1,"Var":"Center_Stage[22]","Y":1},{"__type":"ST","Ix":2,"Var":"C_Backward_Stopper_Down","X":1}],"LRI":3,"RRI":4,"VLs":[{"Ix":5,"X":1}]}

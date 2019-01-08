@@ -11,7 +11,7 @@ _EN=Variables
 ++D=BOOL	N=Clamp_Break	G=VAR
 ++D=DECO_FB	N=Centerring_Deco_FB	G=VAR
 ++D=UINT	N=Center_Step	G=VAR
-++D=ARRAY[0..99] OF BOOL	N=Center_Stage	G=VAR	EC=<ECs><EC EK="[0]" C="Unclamp in start" /><EC EK="[22]" C="Stopper down in start" /><EC EK="[14]" C="Unclamp timeout, re-clamp" /><EC EK="[1]" C="Check board in start" /><EC EK="[2]" C="CV Forward" /><EC EK="[3]" C="Delay AF hit SS4" /><EC EK="[4]" C="Run 1s in start" /><EC EK="[17]" C="Check SS3" /><EC EK="[18]" C="Up Backward stopper" /><EC EK="[19]" C="CV Backward" /><EC EK="[20]" C="Delay AF Hit SS3" /><EC EK="[15]" C="Check BF Up Centerring" /><EC EK="[5]" C="Up centerring cyl" /><EC EK="[6]" C="Check Low Speed SS" /><EC EK="[7]" C="Clamp high speed" /><EC EK="[8]" C="Clamp low speed" /><EC EK="[13]" C="Delay BF Break" /><EC EK="[10]" C="Un clamp high speed" /><EC EK="[11]" C="Center cyl DOWN" /><EC EK="[12]" C="Allow pickup" /><EC EK="[23]" C="Delay AF Pickup" /><EC EK="[21]" C="Backward Stopper Down" /><EC EK="[16]" C="Clamp fail" /><EC EK="[9]" C="Delay in break" /></ECs>
+++D=ARRAY[0..99] OF BOOL	N=Center_Stage	G=VAR	EC=<ECs><EC EK="[0]" C="Unclamp in start" /><EC EK="[22]" C="Stopper down in start" /><EC EK="[14]" C="Unclamp timeout, re-clamp" /><EC EK="[1]" C="Check board in start" /><EC EK="[2]" C="CV Forward" /><EC EK="[3]" C="Delay AF hit SS4" /><EC EK="[4]" C="Run 1s in start" /><EC EK="[17]" C="Check SS2, SS2 BF up Backwark stopper" /><EC EK="[18]" C="Up Backward stopper" /><EC EK="[19]" C="CV Backward" /><EC EK="[20]" C="Delay AF Hit SS3" /><EC EK="[15]" C="Check BF Up Centerring" /><EC EK="[5]" C="Up centerring cyl" /><EC EK="[6]" C="Check Low Speed SS" /><EC EK="[7]" C="Clamp high speed" /><EC EK="[8]" C="Clamp low speed" /><EC EK="[13]" C="Delay BF Break" /><EC EK="[10]" C="Un clamp high speed" /><EC EK="[11]" C="Center cyl DOWN" /><EC EK="[12]" C="Allow pickup" /><EC EK="[23]" C="Delay AF Pickup" /><EC EK="[21]" C="Backward Stopper Down" /><EC EK="[16]" C="Clamp fail" /><EC EK="[9]" C="Delay in break" /></ECs>
 ++D=TON	N=T_Unclamp_Timeout	G=VAR
 ++D=TON	N=T_Delay_AF_Hit_SS4	G=VAR
 ++D=ton	N=T_Run_1s_In_Start	G=VAR
@@ -47,6 +47,7 @@ _EN=Variables
 ++D=TIME	N=Time_Delay_BF_Break	G=VAR
 ++D=BOOL	N=Centerring_Allow	AT=%H0.01	R=1	G=VAR
 ++D=TON	N=T_Cyl_Up_Timeout	G=VAR
+++D=TON	N=T_Wait_SS3_Timeout	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Y30	G=VAR_EXTERNAL
 ++D=BOOL	N=Y31	G=VAR_EXTERNAL
@@ -92,3 +93,5 @@ _EN=Variables
 ++D=BOOL	N=X41	G=VAR_EXTERNAL
 ++D=BOOL	N=Cyl_Up_Timeout	G=VAR_EXTERNAL
 ++D=BOOL	N=HMI_AUTO	G=VAR_EXTERNAL
+++D=BOOL	N=Clamp_Fail	G=VAR_EXTERNAL
+++D=BOOL	N=Reset_Cycletime	G=VAR_EXTERNAL

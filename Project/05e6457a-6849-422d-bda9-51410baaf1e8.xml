@@ -121,6 +121,8 @@ _EN=Variables
 ++D=BOOL	N=Set_System_Time	AT=%W10.07	G=VAR
 ++D=LREAL	N=Cart_1st_Begin_Low_SP	G=VAR
 ++D=LREAL	N=Buff_1st_Begin_Low_SP	G=VAR
+++D=TIME	N=T_Gap_2_Board	G=VAR
+++D=USINT	N=T_Gap_2_Board_Setting	AT=%D13	R=1	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Auto_Run	G=VAR_EXTERNAL
 ++D=BOOL	N=SV2_ABS_DONE	G=VAR_EXTERNAL
@@ -202,3 +204,5 @@ _EN=Variables
 ++D=BOOL	N=Release_Real	G=VAR_EXTERNAL
 ++D=LREAL	N=Cart_Overload_Setting	G=VAR_EXTERNAL
 ++D=LREAL	N=Buffer_Overload_Setting	G=VAR_EXTERNAL
+++D=BOOL	N=Clamp_Fail	G=VAR_EXTERNAL
+++D=BOOL	N=Reset_Cycletime	G=VAR_EXTERNAL

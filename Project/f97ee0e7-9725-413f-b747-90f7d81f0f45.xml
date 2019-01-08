@@ -8,7 +8,7 @@
 {"CLs":[{"__type":"LD","Var":"SV1_ERR"},{"__type":"ST","Ix":1,"Var":"AL_SV1_ERR","X":1}],"LRI":2,"RRI":3,"VLs":[]}
 {"CLs":[{"__type":"LD","Var":"SV2_ERR"},{"__type":"ST","Ix":1,"Var":"AL_SV2_ERR","X":1}],"LRI":2,"RRI":3,"VLs":[]}
 {"CLs":[{"__type":"LD","Not":true,"Var":"X7"},{"__type":"ST","Ix":1,"Var":"AL_Cart_Not_Ready","X":1}],"LRI":2,"RRI":3,"VLs":[]}
-{"CLs":[{"__type":"LD","Var":"AL_Clamp_Err"},{"__type":"ST","Ix":1,"Var":"AL_Clamp_Err","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Clamp_Fail"},{"__type":"ST","Ix":1,"Var":"AL_Clamp_Err","X":1}],"LRI":2,"RRI":3,"VLs":[]}
 {"CLs":[{"__type":"LD","Var":"Cycle_Over_Time"},{"__type":"ST","Ix":1,"Var":"AL_Overtime","X":1}],"LRI":2,"RRI":3,"VLs":[]}
 {"CLs":[{"__type":"LD","Var":"Buffer_Over_Load"},{"__type":"ST","Ix":1,"Var":"AL_Buffer_Overload","X":1}],"LRI":2,"RRI":3,"VLs":[]}
 {"CLs":[{"__type":"LD","Var":"Cart_Over_Load"},{"__type":"ST","Ix":1,"Var":"AL_Cart_Overload","X":1}],"LRI":2,"RRI":3,"VLs":[]}
@@ -23,5 +23,8 @@
 {"CLs":[{"__type":"LD","Var":"Prepare_Full_Cart_1st"},{"__type":"ST","Ix":1,"Var":"AL_Prepare_Full_Cart_1","X":1}],"LRI":2,"RRI":3,"VLs":[]}
 {"CLs":[{"__type":"LD","Var":"Prepare_Full_Cart_2nd"},{"__type":"ST","Ix":1,"Var":"AL_Prepare_Full_Cart_2","X":1}],"LRI":2,"RRI":3,"VLs":[]}
 {"CLs":[{"__type":"LD","Var":"AL_Release_Board"},{"__type":"ST","Ix":1,"Var":"AL_Release_BF_Start","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"SV1_Timeout_Err"},{"__type":"LD","Ix":1,"Var":"AL_SV1_Timeout_Err","Y":1},{"__type":"LD","Ix":2,"Not":true,"Var":"X4","X":1},{"__type":"LD","Ix":3,"Not":true,"Var":"SV1_ABS_DONE","X":2},{"__type":"ST","Ix":4,"Var":"AL_SV1_Timeout_Err","X":3}],"LRI":5,"RRI":6,"VLs":[{"Ix":7,"X":1}]}
+{"CLs":[{"__type":"LD","Var":"SV2_ABS_DONE"},{"__type":"LD","Ix":1,"Var":"SV2_Done","Y":1},{"__type":"ST","Ix":2,"Var":"SV2_Done","X":1}],"LRI":3,"RRI":4,"VLs":[{"Ix":5,"X":1}]}
+{"CLs":[{"__type":"LD","Var":"SV2_Timeout_Err"},{"__type":"LD","Ix":1,"Var":"AL_SV2_Timeout_Err","Y":1},{"__type":"LD","Ix":2,"Not":true,"Var":"X4","X":1},{"__type":"LD","Ix":3,"Not":true,"Var":"SV2_ABS_DONE","X":2},{"__type":"ST","Ix":4,"Var":"AL_SV2_Timeout_Err","X":3}],"LRI":5,"RRI":6,"VLs":[{"Ix":7,"X":1}]}
 {"CLs":[{"__type":"LD","Var":"AL_Full_Cart"},{"__type":"LD","Id":"8ddb7f1e-63b6-4bfb-b972-8746bd3edbda","Ix":1,"Up":true,"Var":"AL_Prepare_Full_Cart_1","Y":1},{"__type":"LD","Id":"b8079dfd-6295-40dc-808a-ccff6761b762","Ix":2,"Up":true,"Var":"AL_Prepare_Full_Cart_2","Y":2},{"__type":"LD","Ix":4,"Var":"Running_Alarm","Y":3},{"__type":"LD","Ix":3,"Not":true,"Var":"X4","X":1},{"__type":"ST","Ix":5,"Var":"Running_Alarm","X":2}],"LRI":6,"RRI":7,"VLs":[{"Ix":8,"X":1},{"Ix":8,"X":1,"Y":1},{"Ix":8,"X":1,"Y":2}]}
 {"CLs":[{"__type":"LD","Id":"617841fd-524c-47d0-85a3-5151000000c8","Up":true,"Var":"AL_Release_BF_Start"},{"__type":"LD","Ix":1,"Var":"AL_Before_Start","Y":1},{"__type":"LD","Ix":2,"Not":true,"Var":"X4","X":1},{"__type":"ST","Ix":3,"Var":"AL_Before_Start","X":2}],"LRI":4,"RRI":5,"VLs":[{"Ix":6,"X":1}]}

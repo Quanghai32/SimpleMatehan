@@ -1779,7 +1779,7 @@
       </Options>
     </NexAxisSoftwareLimitMode>
     <NexAxisPositiveSoftwareLimit>
-      <CurrentValue>480</CurrentValue>
+      <CurrentValue>490</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>2147483647</DefaultValue>
